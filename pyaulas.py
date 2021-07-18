@@ -8,6 +8,7 @@ import os
 import base64
 from Aula2 import pyaula2
 from Aula3 import pyaula3
+from Aula4 import pyaula4
 
 st.set_page_config(page_title="PyAulas",layout="wide",initial_sidebar_state="expanded")
 
@@ -64,7 +65,10 @@ if nav == 'Aulas':
         st.write(text1, unsafe_allow_html=True)
         st.markdown(get_binary_file_downloader_html('Aula3/Ligacoes_quimicas.pptx', 'Aula'), unsafe_allow_html=True)
     elif aula_select == 'Aula 4 - Orbitais moleculares de moléculas diatômicas':
-        st.header('Bem vindo a Aula 4 - Orbitais moleculares de moléculas diatômicas')
+        getaula = pyaula4.Texts()
+        text1 = getaula.text1()
+        st.write(text1, unsafe_allow_html=True)
+        st.markdown(get_binary_file_downloader_html('Aula4/OrbitaisMoleculares.pptx', 'Aula'), unsafe_allow_html=True)
     elif aula_select == 'Aula 5 - Reações de oxirredução: estabilidade redox e diagramas de representação':
         st.header('Bem vindo a Aula 5 - Reações de oxirredução: estabilidade redox e diagramas de representação')
     elif aula_select == 'Aula 6 - Ácidos e bases duros e moles: aplicações do conceito a complexos metálicos':
