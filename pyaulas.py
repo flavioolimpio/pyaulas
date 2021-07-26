@@ -9,6 +9,8 @@ import base64
 from Aula2 import pyaula2
 from Aula3 import pyaula3
 from Aula4 import pyaula4
+from Aula5 import pyaula6
+from Aula6 import pyaula6
 
 st.set_page_config(page_title="PyAulas",layout="wide",initial_sidebar_state="expanded")
 
@@ -42,7 +44,7 @@ if nav == 'Página Inicial':
     text1 = gettext.text1()
     text2 = gettext.text2()
     text3 = gettext.text3()
-    st.header('## Curso de Química Inorgânica')
+    #st.header('## Curso de Química Inorgânica')
     st.markdown('{}'.format(text1), unsafe_allow_html=True)
     st.markdown('{}'.format(text2), unsafe_allow_html=True)
     st.markdown('{}'.format(text3), unsafe_allow_html=True)
@@ -58,21 +60,27 @@ if nav == 'Aulas':
         getaula = pyaula2.Texts()
         text1 = getaula.text1()
         st.write(text1, unsafe_allow_html=True)
-        st.markdown(get_binary_file_downloader_html('Aula2/Aula2_SolidosIonicos.ppt', 'Aula'), unsafe_allow_html=True)
+        #st.markdown(get_binary_file_downloader_html('Aula2/Aula2_SolidosIonicos.ppt', 'Aula'), unsafe_allow_html=True)
     elif aula_select == 'Aula 3 - Ligação química e geometria molecular':
         getaula = pyaula3.Texts()
         text1 = getaula.text1()
         st.write(text1, unsafe_allow_html=True)
-        st.markdown(get_binary_file_downloader_html('Aula3/Ligacoes_quimicas.pptx', 'Aula'), unsafe_allow_html=True)
+        #st.markdown(get_binary_file_downloader_html('Aula3/Ligacoes_quimicas.pptx', 'Aula'), unsafe_allow_html=True)
     elif aula_select == 'Aula 4 - Orbitais moleculares de moléculas diatômicas':
         getaula = pyaula4.Texts()
         text1 = getaula.text1()
         st.write(text1, unsafe_allow_html=True)
-        st.markdown(get_binary_file_downloader_html('Aula4/OrbitaisMoleculares.pptx', 'Aula'), unsafe_allow_html=True)
+        #st.markdown(get_binary_file_downloader_html('Aula4/OrbitaisMoleculares.pptx', 'Aula'), unsafe_allow_html=True)
     elif aula_select == 'Aula 5 - Reações de oxirredução: estabilidade redox e diagramas de representação':
-        st.header('Bem vindo a Aula 5 - Reações de oxirredução: estabilidade redox e diagramas de representação')
+        getaula = pyaula5.Texts()
+        text1 = getaula.text1()
+        st.write(text1, unsafe_allow_html=True)
+        #st.markdown(get_binary_file_downloader_html('Aula4/OrbitaisMoleculares.pptx', 'Aula'), unsafe_allow_html=True)
     elif aula_select == 'Aula 6 - Ácidos e bases duros e moles: aplicações do conceito a complexos metálicos':
-        st.header('Bem vindo a Aula 6 - Ácidos e bases duros e moles: aplicações do conceito a complexos metálicos')
+        getaula = pyaula6.Texts()
+        text1 = getaula.text1()
+        st.write(text1, unsafe_allow_html=True)
+        #st.markdown(get_binary_file_downloader_html('Aula4/OrbitaisMoleculares.pptx', 'Aula'), unsafe_allow_html=True)
     elif aula_select == 'Aula 7 - Simetria molecular e grupos pontuais':
         st.header('Bem vindo a Aula 7 - Simetria molecular e grupos pontuais')
     elif aula_select == 'Aula 8 - Complexos de metais de transição: campo cristalino e campo ligante':
