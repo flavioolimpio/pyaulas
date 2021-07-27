@@ -9,7 +9,7 @@ import base64
 from Aula2 import pyaula2
 from Aula3 import pyaula3
 from Aula4 import pyaula4
-from Aula5 import pyaula6
+from Aula5 import pyaula5
 from Aula6 import pyaula6
 
 st.set_page_config(page_title="PyAulas",layout="wide",initial_sidebar_state="expanded")

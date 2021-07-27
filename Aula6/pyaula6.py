@@ -10,7 +10,7 @@ class Texts:
         <h2 style='text-align: justify; color: black;'>1) Fundamentos e teoria do conceito de ácidos e bases duros e moles;<br>
         <br>2) Descrever características de uma espécie como dura ou mole;<br>
         <br>3) Compreender as medidas quantitativas de dureza;<br>
-        <br>4) Relacionar esses conceitos com solubibidade, coordenação de compostos, direção da reação e a estabilidae de complexos metálicos.
+        <br>4) Relacionar esses conceitos com solubilidade, coordenação de compostos, direção da reação e a estabilidade de complexos metálicos.
 
         <h1 style='text-align: center; color: black;'>Atividades Complementares</h1>
         <h2 style='text-align: justify; color: black;'>Para enriquecer seu conhecimento no aprendizado do conteúdo ministrado na aula de hoje, algumas sugestões de links para serem acessados são fornecidas abaixo:</h2>
