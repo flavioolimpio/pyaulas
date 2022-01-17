@@ -4,7 +4,7 @@ import numpy as np
 from texts import Texts
 import os
 import base64
-from streamlit_option_menu import option_menu
+#from streamlit_option_menu import option_menu
 from Aula_01 import pyaula1
 from Aula_02 import pyaula2
 from Aula_03 import pyaula3
@@ -32,13 +32,13 @@ aulas = ['Escolha uma Aula',
 'Aula 10 - Cinética Química']
 
 
-with st.sidebar:
-    nav = option_menu("Navegação", ["Página Inicial", 'Aulas', 'Contato'], 
-        icons=['house', 'book', 'chat-left-text-fill'], menu_icon="cast", default_index=0)
-    nav
+#with st.sidebar:
+#    nav = option_menu("Navegação", ["Página Inicial", 'Aulas', 'Contato'], 
+#        icons=['house', 'book', 'chat-left-text-fill'], menu_icon="cast", default_index=0)
+#    nav
 
-#st.sidebar.markdown('# Navegação:')
-#nav = st.sidebar.radio('Ir para:', ['Página Inicial', 'Aulas'])
+st.sidebar.markdown('# Navegação:')
+nav = st.sidebar.radio('Ir para:', ['Página Inicial', 'Aulas'])
 
 
 def get_binary_file_downloader_html(bin_file, file_label='File'):
