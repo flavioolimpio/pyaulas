@@ -38,7 +38,7 @@ aulas = ['Escolha uma Aula',
 #    nav
 
 st.sidebar.markdown('# Navegação:')
-nav = st.sidebar.radio('Ir para:', ['Página Inicial', 'Aulas'])
+nav = st.sidebar.radio('Ir para:', ['Página Inicial', 'Aulas', 'Contato'])
 
 
 def get_binary_file_downloader_html(bin_file, file_label='File'):
