@@ -115,7 +115,7 @@ if nav == 'Aulas':
         getaula = pyaula8.Texts()
         text1 = getaula.text1()
         st.write(text1, unsafe_allow_html=True)
-        st.markdown(get_binary_file_downloader_html('Aula_08/Aula_08.pptx', 'Aula'), unsafe_allow_html=True)
+        st.markdown(get_binary_file_downloader_html('Aula_08/Aula_08_UFG.pptx', 'Aula'), unsafe_allow_html=True)
     elif aula_select == 'Aula 9 - Equilíbrio Químico':
         st.header('Bem-vindo à Aula 9 - Equilíbrio Químico')
         getaula = pyaula9.Texts()
