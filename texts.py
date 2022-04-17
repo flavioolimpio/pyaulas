@@ -43,10 +43,10 @@ class Texts:
         Químico Industrial e Mestre em química (Universidade Estadual de Goiás - UEG)<br>
         Doutorando em Química (Universidade de Brasília - UnB)<br>
         Professor Substituto no IQ-UFG (Instituto de Química - Universidade Federal de Goiás)<br>
-        <a href="http://lattes.cnpq.br/3756571652061846"target="_blank">Lattes</a>.<br>
-        <a href="https://www.linkedin.com/in/flavioosneto/"target="_blank">Linkedin</a>.<br>
-        <a href="https://www.researchgate.net/profile/Flavio-Neto-3"target="_blank">Linkedin</a>.<br>
-        flavio_olimpio@ufg.br
+        flavio_olimpio@ufg.br<br>
+        <a href="http://lattes.cnpq.br/3756571652061846"target="_blank">Lattes</a><br>
+        <a href="https://www.linkedin.com/in/flavioosneto/"target="_blank">Linkedin</a><br>
+        <a href="https://www.researchgate.net/profile/Flavio-Neto-3"target="_blank">Linkedin</a><br>
         </p>
         </body>
         """
