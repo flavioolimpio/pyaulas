@@ -150,7 +150,8 @@ if nav == 'Contato':
     #st.header(":mailbox: Entre em contato comigo!!")
     st.header("Entre em contato comigo!!")
     contact_form = """
-    <form id='myForm' action="https://formsubmit.co/flavio_olimpio@ufg.br" method="POST">
+    <iframe name="hiddenFrame" width="0" height="0" border="0" style="display: none;"></iframe>
+    <form action="https://formsubmit.co/flavio_olimpio@ufg.br" id="myForm" method="post" name="myForm" target="hiddenFrame">
      <input type="hidden" name="_captcha" value="false">
      <input type="text" name="name" placeholder="Seu nome" optional>
      <input type="email" name="email" placeholder="Seu email" optional>
