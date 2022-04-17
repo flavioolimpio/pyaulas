@@ -158,6 +158,7 @@ if nav == 'Contato':
      <textarea name="message" placeholder="Digite sua mensagem aqui"></textarea>
      <button type="submit">Enviar</button>
     </form>
+    <p id="thank-you-message">Obrigado por nos contatar. Entraremos em contato com você em breve.</p>
     """
 
     st.markdown(contact_form, unsafe_allow_html=True)
