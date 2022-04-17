@@ -136,8 +136,8 @@ if nav == 'Físico-Química':
         #text1 = getaula.text1()
         #st.write(text1, unsafe_allow_html=True)
         #st.markdown(get_binary_file_downloader_html('Aula_10/Aula_10.pptx', 'Aula'), unsafe_allow_html=True)
-    elif aula_select == 'Cinética Química':
-        st.header('Bem-vindo à Aula: Cinética Química')
+    elif aula_select == 'Cinética química':
+        st.header('Bem-vindo à Aula: Cinética química')
         #getaula = pyaula10.Texts()
         #text1 = getaula.text1()
         #st.write(text1, unsafe_allow_html=True)
