@@ -61,7 +61,7 @@ if nav == 'Página Inicial':
     text1 = gettext.text1()
     text2 = gettext.text2()
     text3 = gettext.text3()
-    st.header('Curso de Química Geral')
+    st.header('Informações Gerais')
     st.markdown('{}'.format(text1), unsafe_allow_html=True)
     st.markdown('{}'.format(text2), unsafe_allow_html=True)
     st.markdown('{}'.format(text3), unsafe_allow_html=True)
