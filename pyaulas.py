@@ -131,7 +131,6 @@ if nav == 'Aulas':
 
 if nav == 'Contato':
 
-
     #st.header(":mailbox: Entre em contato comigo!!")
     st.header("Entre em contato comigo!!")
     contact_form = """
