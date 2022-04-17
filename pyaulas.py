@@ -116,6 +116,7 @@ if nav == 'Química Geral':
         #st.markdown(get_binary_file_downloader_html('Aula_09/equilibrio_quimico.pdf', 'Aula'), unsafe_allow_html=True)
 
 if nav == 'Físico-Química':
+    st.markdown(get_binary_file_downloader_html('Plano_de_Curso_INQ0322_Verao_2022.pdf', 'Plano de Curso'), unsafe_allow_html=True)
     aula_select = st.selectbox("Selecione a aula: ", aulas_fq)
     if aula_select == 'Escolha uma Aula':
         pass
