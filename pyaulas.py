@@ -36,7 +36,7 @@ aulas_fq = ['Escolha uma Aula',
 
 
 with st.sidebar:
-    nav = option_menu("Navegação", ["Página Inicial", 'Química Geral', 'Físico-Química' 'Contato'], 
+    nav = option_menu("Navegação", ["Página Inicial", 'Química Geral', 'Físico-Química', 'Contato'], 
         icons=['house', 'book', 'book-fill', 'chat-left-text-fill'], menu_icon="cast", default_index=0)
     nav
 
