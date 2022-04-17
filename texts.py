@@ -20,13 +20,14 @@ class Texts:
         TEXT2 = """
         ## Informação do curso  
         <body style='text-align: justify; color: black;'>
-        <p> As disciplinas ofericidas no curso de verão e que poderão ser acessados pelos alunos são:</p>        
+        <p> 
+        As disciplinas ofericidas no curso de verão e que poderão ser acessados pelos alunos são:<br>        
 
-        <p> (i)  INQ0322 - Química Geral; </p>
-        <p> (ii) INQ0330 - Físico-Química. </p>
+        (i)  INQ0322 - Química Geral;  <br>
+        (ii) INQ0330 - Físico-Química. <br>
         
-        
-        <p>As demais informações como ementa e detalhes adicionais podem ser acessado no menu ao lado.</p>
+        As demais informações como ementa e detalhes adicionais podem ser acessado no menu ao lado.
+        </p>
         </body>
         """
 
@@ -36,14 +37,16 @@ class Texts:
         TEXT3 = """
         ## Informações adicionais: 
         <body style='text-align: justify; color: black;'>   
-        <p>Flávio Olimpio Sanches Neto</p>
-        <p>Químico Industrial e Mestre em química (Universidade Estadual de Goiás - UEG)</p>
-        <p>Doutorando em Química (Universidade de Brasília - UnB)</p>
-        <p>Professor Substituto no IQ-UFG (Instituto de Química - Universidade Federal de Goiás)
-        <p> <a href="http://lattes.cnpq.br/3756571652061846"target="_blank">Lattes</a>. </p>
-        <p> <a href="https://www.linkedin.com/in/flavioosneto/"target="_blank">Linkedin</a>. </p>
-        <p> <a href="https://www.researchgate.net/profile/Flavio-Neto-3"target="_blank">Linkedin</a>. </p>
-        <p>flavio_olimpio@outlook.com</p>
+        <p>
+        Flávio Olimpio Sanches Neto<br>
+        Químico Industrial e Mestre em química (Universidade Estadual de Goiás - UEG)<br>
+        Doutorando em Química (Universidade de Brasília - UnB)<br>
+        Professor Substituto no IQ-UFG (Instituto de Química - Universidade Federal de Goiás)<br>
+        <a href="http://lattes.cnpq.br/3756571652061846"target="_blank">Lattes</a>.<br>
+        <a href="https://www.linkedin.com/in/flavioosneto/"target="_blank">Linkedin</a>.<br>
+        <a href="https://www.researchgate.net/profile/Flavio-Neto-3"target="_blank">Linkedin</a>.<br>
+        flavio_olimpio@outlook.com
+        </p>
         </body>
         """
 
