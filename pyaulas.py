@@ -68,6 +68,7 @@ if nav == 'Página Inicial':
 
 if nav == 'Química Geral':
     #st.header('Curso de Química Inorgânica')
+    st.markdown(get_binary_file_downloader_html('Plano_de_Curso_INQ0322_Verao_2022.pdf', 'Plano de Curso'), unsafe_allow_html=True)
     aula_select = st.selectbox("Selecione a aula: ", aulas_qg)
     if aula_select == 'Escolha uma Aula':
         pass
