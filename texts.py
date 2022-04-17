@@ -40,7 +40,7 @@ class Texts:
         <p>
         Flávio Olimpio Sanches Neto<br>
         Químico Industrial e Mestre em química (Universidade Estadual de Goiás - UEG)<br>
-        Doutorando em Química (Universidade de Brasília - UnB)<br>
+        Doutorando em Físico-Química (Universidade de Brasília - UnB)<br>
         Professor Substituto no IQ-UFG (Instituto de Química - Universidade Federal de Goiás)<br>
         flavio_olimpio@ufg.br<br>
         <a href="http://lattes.cnpq.br/3756571652061846"target="_blank">Lattes</a><br>
