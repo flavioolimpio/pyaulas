@@ -45,7 +45,7 @@ class Texts:
         flavio_olimpio@ufg.br<br>
         <a href="http://lattes.cnpq.br/3756571652061846"target="_blank">Lattes</a><br>
         <a href="https://www.linkedin.com/in/flavioosneto/"target="_blank">Linkedin</a><br>
-        <a href="https://www.researchgate.net/profile/Flavio-Neto-3"target="_blank">Linkedin</a><br>
+        <a href="https://www.researchgate.net/profile/Flavio-Neto-3"target="_blank">ResearchGate</a><br>
         </p>
         </body>
         """
