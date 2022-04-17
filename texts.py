@@ -17,14 +17,12 @@ class Texts:
     def text2(self):
         TEXT2 = """
         ## Informação do curso  
-        <body style='text-align: justify; color: black;'>
-        <p> 
+        <p style='text-align: justify; color: black;'>
         As disciplinas ofericidas no curso de verão e que poderão ser acessados pelos alunos são:<br>        
         (i)  INQ0322 - Química Geral;  <br>
         (ii) INQ0330 - Físico-Química. <br>
         As demais informações como ementa e detalhes adicionais das disciplinas podem ser acessadas no menu ao lado.
         </p>
-        </body>
         """
 
         return TEXT2
@@ -32,8 +30,7 @@ class Texts:
     def text3(self):
         TEXT3 = """
         ## Informações adicionais: 
-        <body style='text-align: justify; color: black;'>   
-        <p>
+        <p style='text-align: justify; color: black;'>   
         Flávio Olimpio Sanches Neto<br>
         Químico Industrial e Mestre em química (Universidade Estadual de Goiás - UEG)<br>
         Doutorando em Físico-Química (Universidade de Brasília - UnB)<br>
@@ -43,7 +40,6 @@ class Texts:
         <a href="https://www.linkedin.com/in/flavioosneto/"target="_blank">Linkedin</a><br>
         <a href="https://www.researchgate.net/profile/Flavio-Neto-3"target="_blank">ResearchGate</a><br>
         </p>
-        </body>
         """
 
         return TEXT3
