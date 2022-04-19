@@ -125,7 +125,7 @@ if nav == 'Físico-Química':
         #getaula = pyaula10.Texts()
         #text1 = getaula.text1()
         #st.write(text1, unsafe_allow_html=True)
-        #st.markdown(get_binary_file_downloader_html('Aula_05_gases.pptx', 'Aula'), unsafe_allow_html=True)
+        st.markdown(get_binary_file_downloader_html('Aula_05_gases.pptx', 'Aula'), unsafe_allow_html=True)
     elif aula_select == 'Termodinâmica':
         st.header('Bem-vindo à Aula: Termodinâmica')
         #getaula = pyaula10.Texts()
