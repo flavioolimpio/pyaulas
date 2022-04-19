@@ -83,7 +83,7 @@ if nav == 'Química Geral':
         #getaula = pyaula2.Texts()
         #text1 = getaula.text1()
         #st.write(text1, unsafe_allow_html=True)
-        #st.markdown(get_binary_file_downloader_html('Aula_02/Aula_02_Ligacoes_quimicas.pptx', 'Aula'), unsafe_allow_html=True)
+        st.markdown(get_binary_file_downloader_html('Aula_02_Estrutura_Atomica_02.pptx', 'Aula'), unsafe_allow_html=True)
     elif aula_select == 'Reações e estequiometria':
         st.header('Bem-vindo à Aula: Reações e estequiometria')
         #getaula = pyaula3.Texts()
