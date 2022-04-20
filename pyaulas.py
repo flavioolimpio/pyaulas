@@ -117,6 +117,7 @@ if nav == 'Química Geral':
 
 if nav == 'Físico-Química':
     st.markdown(get_binary_file_downloader_html('Plano_de_Curso_INQ0330_Verao_2022.pdf', 'Plano de Curso'), unsafe_allow_html=True)
+    st.markdown(get_binary_file_downloader_html('lista_01_FQ.pdf', 'LISTA 01'), unsafe_allow_html=True)
     aula_select = st.selectbox("Selecione a aula: ", aulas_fq)
     if aula_select == 'Escolha uma Aula':
         pass
