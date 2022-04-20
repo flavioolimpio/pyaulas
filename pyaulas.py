@@ -22,8 +22,7 @@ st.set_page_config(page_title="PyAulas",layout="wide",initial_sidebar_state="exp
 aulas_qg = ['Escolha uma Aula',
 'A matéria e seus estados físicos', 
 'Átomos, elementos e compostos',
-'Reações e estequiometria',
-'Soluções',
+'Reações e estequiometria e soluções',
 'Ligações químicas',
 'Termoquímica',
 'Equilíbrio químico']
@@ -69,6 +68,7 @@ if nav == 'Página Inicial':
 if nav == 'Química Geral':
     #st.header('Curso de Química Inorgânica')
     st.markdown(get_binary_file_downloader_html('Plano_de_Curso_INQ0322_Verao_2022.pdf', 'Plano de Curso'), unsafe_allow_html=True)
+    st.markdown(get_binary_file_downloader_html('LISTA_1.pdf', 'LISTA 01'), unsafe_allow_html=True)
     aula_select = st.selectbox("Selecione a aula: ", aulas_qg)
     if aula_select == 'Escolha uma Aula':
         pass
@@ -84,14 +84,14 @@ if nav == 'Química Geral':
         #text1 = getaula.text1()
         #st.write(text1, unsafe_allow_html=True)
         st.markdown(get_binary_file_downloader_html('Aula_02_Estrutura_Atomica.pdf', 'Aula'), unsafe_allow_html=True)
-    elif aula_select == 'Reações e estequiometria':
-        st.header('Bem-vindo à Aula: Reações e estequiometria')
+    elif aula_select == 'Reações e estequiometria e soluções':
+        st.header('Bem-vindo à Aula: Reações, estequiometria e soluções')
         #getaula = pyaula3.Texts()
         #text1 = getaula.text1()
         #st.write(text1, unsafe_allow_html=True)
-        #st.markdown(get_binary_file_downloader_html('Aula_03/Aula_03.pptx', 'Aula'), unsafe_allow_html=True)
-    elif aula_select == 'Soluções':
-        st.header('Bem-vindo à Aula: Soluções')
+        st.markdown(get_binary_file_downloader_html('Aula_03_reacoes.pptx', 'Aula'), unsafe_allow_html=True)
+    #elif aula_select == 'Soluções':
+    #    st.header('Bem-vindo à Aula: Soluções')
         #getaula = pyaula4.Texts()
         #text1 = getaula.text1()
         #st.write(text1, unsafe_allow_html=True)
