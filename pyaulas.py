@@ -101,7 +101,7 @@ if nav == 'Química Geral':
         #getaula = pyaula5.Texts()
         #text1 = getaula.text1()
         #st.write(text1, unsafe_allow_html=True)
-        #st.markdown(get_binary_file_downloader_html('Aula_05/Aula_05.pptx', 'Aula'), unsafe_allow_html=True)
+        st.markdown(get_binary_file_downloader_html('Aula_Ligacoes_quimicas.pptx', 'Aula'), unsafe_allow_html=True)
     elif aula_select == 'Termoquímica':
         st.header('Bem-vindo à Aula: Termoquímica')
         #getaula = pyaula6.Texts()
@@ -132,7 +132,7 @@ if nav == 'Físico-Química':
         #getaula = pyaula10.Texts()
         #text1 = getaula.text1()
         #st.write(text1, unsafe_allow_html=True)
-        st.markdown(get_binary_file_downloader_html('Aula_06.pptx', 'Aula'), unsafe_allow_html=True)
+        st.markdown(get_binary_file_downloader_html('Aula_06_Termodinamica.pptx', 'Aula'), unsafe_allow_html=True)
     elif aula_select == 'Sistemas coloidais e tensão superficial':
         st.header('Bem-vindo à Aula: Sistemas coloidais e tensão superficial')
         #getaula = pyaula10.Texts()
