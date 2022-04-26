@@ -100,7 +100,8 @@ if nav == 'Química Geral':
         st.header('Bem-vindo à Aula: Ligações químicas')
         #getaula = pyaula5.Texts()
         #text1 = getaula.text1()
-        #st.write(text1, unsafe_allow_html=True)
+        #st.write(text1, unsafe_allow_html=True)        
+        st.markdown(get_binary_file_downloader_html('exercicios_lista_ligacao_quimica.pdf', 'Exercicio Lista'), unsafe_allow_html=True)
         st.markdown(get_binary_file_downloader_html('Aula_Ligacoes_quimicas.pptx', 'Aula'), unsafe_allow_html=True)
     elif aula_select == 'Termoquímica':
         st.header('Bem-vindo à Aula: Termoquímica')
