@@ -5,16 +5,6 @@ from texts import Texts
 import os
 import base64
 from streamlit_option_menu import option_menu
-from Aula_01 import pyaula1
-from Aula_02 import pyaula2
-from Aula_03 import pyaula3
-from Aula_04 import pyaula4
-from Aula_05 import pyaula5
-from Aula_06 import pyaula6
-from Aula_07 import pyaula7
-from Aula_08 import pyaula8
-from Aula_09 import pyaula9
-from Aula_10 import pyaula10
 
 st.set_page_config(page_title="PyAulas",layout="wide",initial_sidebar_state="expanded")
 
@@ -42,7 +32,7 @@ with st.sidebar:
 #st.sidebar.markdown('# Navegação:')
 #nav = st.sidebar.radio('Ir para:', ['Página Inicial', 'Aulas', 'Contato'])
 
-
+@st.cache
 def get_binary_file_downloader_html(bin_file, file_label='File'):
     with open(bin_file, 'rb') as f:
         data = f.read()
