@@ -98,7 +98,7 @@ if nav == 'Química Geral':
         #getaula = pyaula6.Texts()
         #text1 = getaula.text1()
         #st.write(text1, unsafe_allow_html=True)
-        #st.markdown(get_binary_file_downloader_html('Aula_06/Aula_06.pptx', 'Aula'), unsafe_allow_html=True)
+        st.markdown(get_binary_file_downloader_html('Aula_06_Termodinamica.pptx', 'Aula'), unsafe_allow_html=True)
     elif aula_select == 'Equilíbrio químico':
         st.header('Equilíbrio químico')
         #getaula = pyaula9.Texts()
