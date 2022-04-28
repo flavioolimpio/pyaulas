@@ -59,6 +59,7 @@ if nav == 'Química Geral':
     #st.header('Curso de Química Inorgânica')
     st.markdown(get_binary_file_downloader_html('Plano_de_Curso_INQ0322_Verao_2022.pdf', 'Plano de Curso'), unsafe_allow_html=True)
     st.markdown(get_binary_file_downloader_html('LISTA_1.pdf', 'LISTA 01'), unsafe_allow_html=True)
+    st.markdown(get_binary_file_downloader_html('LISTA_02_QG.pdf', 'Baixar Lista 2'), unsafe_allow_html=True)
     aula_select = st.selectbox("Selecione a aula: ", aulas_qg)
     if aula_select == 'Escolha uma Aula':
         pass
@@ -104,7 +105,8 @@ if nav == 'Química Geral':
         #getaula = pyaula9.Texts()
         #text1 = getaula.text1()
         #st.write(text1, unsafe_allow_html=True)
-        #st.markdown(get_binary_file_downloader_html('Aula_09/equilibrio_quimico.pdf', 'Aula'), unsafe_allow_html=True)
+        st.markdown(get_binary_file_downloader_html('LISTA_02_QG.pdf', 'Baixar Lista 2'), unsafe_allow_html=True)
+        st.markdown(get_binary_file_downloader_html('Aula_Equilibrio_Quimico.pptx', 'Aula'), unsafe_allow_html=True)
 
 if nav == 'Físico-Química':
     st.markdown(get_binary_file_downloader_html('Plano_de_Curso_INQ0330_Verao_2022.pdf', 'Plano de Curso'), unsafe_allow_html=True)
@@ -135,7 +137,7 @@ if nav == 'Físico-Química':
         #getaula = pyaula10.Texts()
         #text1 = getaula.text1()
         #st.write(text1, unsafe_allow_html=True)
-        #st.markdown(get_binary_file_downloader_html('Aula_10/Aula_10.pptx', 'Aula'), unsafe_allow_html=True)
+        st.markdown(get_binary_file_downloader_html('Aula_10.pptx', 'Aula'), unsafe_allow_html=True)
 
 if nav == 'Contato':
 
