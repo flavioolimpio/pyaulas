@@ -8,7 +8,7 @@ class Texts:
         Vários estudos já têm indicado o prejuízo que a pandemia está provocando e irá provocar nos próximos anos no sistema educacional mundial e brasileiro.
         Neste sentido, é de suma importância, que os professores, apoiados por pesquisas cientificas, utilizem metodologias alternativas para o melhor aprendizado do aluno em sala de aula. 
         Foi com este pensamento que as disciplinas oferecidas pelo Prof. Me. Flávio Olimpio foram repensadas.
-        Este site foi desenvolvido com o objetivo de guiar o aluno na disciplina de química ministrada na Universidade Federal de Goiás pelo Prof. Me. Flávio Olimpio Sanches Neto. 
+        Este site foi desenvolvido com o objetivo de guiar os alunos nas disciplinas de química ministradas na Universidade Federal de Goiás pelo Prof. Me. Flávio Olimpio Sanches Neto. 
         A ideia é que o site se aperfeiçoe com o tempo e com os feedbacks dos alunos.</p>
         """
 
@@ -19,8 +19,8 @@ class Texts:
         ## Informação do curso  
         <p style='text-align: justify; color: black;'>
         As disciplinas ofericidas no curso de verão e que poderão ser acessados pelos alunos são:<br>        
-        (i)  INQ0322 - Química Geral;  <br>
-        (ii) INQ0330 - Físico-Química. <br>
+        (i)  INQ0158 - Química Geral B;  <br>
+        (ii) INQ0324 - Química Geral Experimental. <br>
         As demais informações como ementa e detalhes adicionais das disciplinas podem ser acessadas no menu ao lado.
         </p>
         """

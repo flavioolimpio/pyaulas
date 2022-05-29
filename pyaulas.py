@@ -9,28 +9,33 @@ from streamlit_option_menu import option_menu
 st.set_page_config(page_title="PyAulas",layout="wide",initial_sidebar_state="expanded")
 
 
-aulas_qg = ['Escolha uma Aula',
-'A matéria e seus estados físicos', 
-'Átomos, elementos e compostos',
-'Reações e estequiometria e soluções',
-'Ligações químicas',
-'Termoquímica',
-'Equilíbrio químico']
+aulas_qgb = ['Escolha uma Aula',
+'TÓPICO 1: ALGUNS CONCEITOS IMPORTANTES PARA QUÍMICA', 
+'TÓPICO 2: MODELOS ATÔMICOS',
+'TÓPICO 3: SUBSTÂNCIAS E ALGUMAS DE SUAS PROPRIEDADES',
+'TÓPICO 4: INTRODUÇÃO À LIGAÇÃO QUÍMICA A PARTIR DO MODELO ORBITAL',
+'TÓPICO 5: ESTEQUIOMETRIA E REAÇÕES QUÍMICAS: POR QUE OCORREM?',
+'TÓPICO 6: O QUE É UM SISTEMA EM EQUILÍBRIO QUÍMICO?']
 
-aulas_fq = ['Escolha uma Aula',
-'Gases', 
-'Termodinâmica',
-'Sistemas coloidais e tensão superficial',
-'Cinética química']
+aulas_qge = ['Escolha uma Aula',
+'Apresentação da disciplina, normas de segurança e vidraria básica', 
+'Equipamentos básicos de laboratório e Técnicas de Trabalho com Material Volumétrico',
+'Densidade de Sólido e Líquidos e a Variação da Densidade em Função da Temperatura',
+'Identificação de Metais utilizando o Teste da Chama', 
+'Solubilidade de Sólidos em Líquidos', 
+'Reações Químicas em Solução Aquosa'
+'Preparo de solução', 
+'Padronização de Soluções Aquosas',
+'Titulação ácido-base: Determinação do teor de ácido acetilsalicílico em comprimido',
+'Determinação da acidez no vinagre comercial', 
+'Reações de transferências de elétrons']
 
 
 with st.sidebar:
-    nav = option_menu("Navegação", ["Página Inicial", 'Química Geral', 'Físico-Química', 'Contato'], 
+    nav = option_menu("Navegação", ["Página Inicial", 'Química Geral B', 'Química Geral Experimental', 'Contato'], 
         icons=['house-fill', 'book', 'book-fill', 'chat-left-text'], menu_icon="cast", default_index=0)
     nav
 
-#st.sidebar.markdown('# Navegação:')
-#nav = st.sidebar.radio('Ir para:', ['Página Inicial', 'Aulas', 'Contato'])
 
 @st.cache
 def get_binary_file_downloader_html(bin_file, file_label='File'):
@@ -55,89 +60,125 @@ if nav == 'Página Inicial':
     st.markdown('{}'.format(text2), unsafe_allow_html=True)
     st.markdown('{}'.format(text3), unsafe_allow_html=True)
 
-if nav == 'Química Geral':
+if nav == 'Química Geral B':
     #st.header('Curso de Química Inorgânica')
-    st.markdown(get_binary_file_downloader_html('Plano_de_Curso_INQ0322_Verao_2022.pdf', 'Plano de Curso'), unsafe_allow_html=True)
-    st.markdown(get_binary_file_downloader_html('LISTA_1.pdf', 'LISTA 01'), unsafe_allow_html=True)
-    st.markdown(get_binary_file_downloader_html('LISTA_02_QG.pdf', 'Baixar Lista 2'), unsafe_allow_html=True)
-    aula_select = st.selectbox("Selecione a aula: ", aulas_qg)
+    st.markdown(get_binary_file_downloader_html('QuimicaGeralB/Plano_de_Aula_QuimicaGeralB_pyAulas.pdf', 'Plano de Curso'), unsafe_allow_html=True)
+    aula_select = st.selectbox("Selecione a aula: ", aulas_qgb)
     if aula_select == 'Escolha uma Aula':
         pass
-    elif aula_select == 'A matéria e seus estados físicos':
-        st.header('Bem-vindo à Aula: A matéria e seus estados físicos')
+    elif aula_select == 'TÓPICO 1: ALGUNS CONCEITOS IMPORTANTES PARA QUÍMICA':
+        st.header('Bem-vindo à Aula: TÓPICO 1: ALGUNS CONCEITOS IMPORTANTES PARA QUÍMICA')
         #getaula = pyaula1.Texts()
         #text1 = getaula.text1()
         #st.write(text1, unsafe_allow_html=True)
-        st.markdown(get_binary_file_downloader_html('Aula_01_Materia.pptx', 'Aula'), unsafe_allow_html=True)
-    elif aula_select == 'Átomos, elementos e compostos':
-        st.header('Bem-vindo à Aula: Átomos, elementos e compostos')
+        #st.markdown(get_binary_file_downloader_html('Aula_01_Materia.pptx', 'Aula'), unsafe_allow_html=True)
+    elif aula_select == 'TÓPICO 2: MODELOS ATÔMICOS':
+        st.header('Bem-vindo à Aula: TÓPICO 2: MODELOS ATÔMICOS')
         #getaula = pyaula2.Texts()
         #text1 = getaula.text1()
         #st.write(text1, unsafe_allow_html=True)
-        st.markdown(get_binary_file_downloader_html('Aula_02_Estrutura_Atomica.pdf', 'Aula'), unsafe_allow_html=True)
-    elif aula_select == 'Reações e estequiometria e soluções':
-        st.header('Bem-vindo à Aula: Reações, estequiometria e soluções')
+        #st.markdown(get_binary_file_downloader_html('Aula_02_Estrutura_Atomica.pdf', 'Aula'), unsafe_allow_html=True)
+    elif aula_select == 'TÓPICO 3: SUBSTÂNCIAS E ALGUMAS DE SUAS PROPRIEDADES':
+        st.header('Bem-vindo à Aula: TÓPICO 3: SUBSTÂNCIAS E ALGUMAS DE SUAS PROPRIEDADES')
         #getaula = pyaula3.Texts()
         #text1 = getaula.text1()
         #st.write(text1, unsafe_allow_html=True)
-        st.markdown(get_binary_file_downloader_html('Aula_03_reacoes.pptx', 'Aula'), unsafe_allow_html=True)
-    #elif aula_select == 'Soluções':
-    #    st.header('Bem-vindo à Aula: Soluções')
-        #getaula = pyaula4.Texts()
-        #text1 = getaula.text1()
-        #st.write(text1, unsafe_allow_html=True)
-        #st.markdown(get_binary_file_downloader_html('Aula_04/Aula_04.pptx', 'Aula'), unsafe_allow_html=True)
-    elif aula_select == 'Ligações químicas':
-        st.header('Bem-vindo à Aula: Ligações químicas')
+        #st.markdown(get_binary_file_downloader_html('Aula_03_reacoes.pptx', 'Aula'), unsafe_allow_html=True)
+    elif aula_select == 'TÓPICO 4: INTRODUÇÃO À LIGAÇÃO QUÍMICA A PARTIR DO MODELO ORBITAL':
+        st.header('Bem-vindo à Aula: TÓPICO 4: INTRODUÇÃO À LIGAÇÃO QUÍMICA A PARTIR DO MODELO ORBITAL')
         #getaula = pyaula5.Texts()
         #text1 = getaula.text1()
         #st.write(text1, unsafe_allow_html=True)        
-        st.markdown(get_binary_file_downloader_html('exercicios_lista_ligacao_quimica.pdf', 'Exercicio Lista'), unsafe_allow_html=True)
-        st.markdown(get_binary_file_downloader_html('Aula_Ligacoes_quimicas.pptx', 'Aula'), unsafe_allow_html=True)
-    elif aula_select == 'Termoquímica':
-        st.header('Bem-vindo à Aula: Termoquímica')
+        #st.markdown(get_binary_file_downloader_html('exercicios_lista_ligacao_quimica.pdf', 'Exercicio Lista'), unsafe_allow_html=True)
+        #st.markdown(get_binary_file_downloader_html('Aula_Ligacoes_quimicas.pptx', 'Aula'), unsafe_allow_html=True)
+    elif aula_select == 'TÓPICO 5: ESTEQUIOMETRIA E REAÇÕES QUÍMICAS: POR QUE OCORREM?':
+        st.header('Bem-vindo à Aula: TÓPICO 5: ESTEQUIOMETRIA E REAÇÕES QUÍMICAS: POR QUE OCORREM?')
         #getaula = pyaula6.Texts()
         #text1 = getaula.text1()
         #st.write(text1, unsafe_allow_html=True)
-        st.markdown(get_binary_file_downloader_html('Aula_06_Termodinamica.pptx', 'Aula'), unsafe_allow_html=True)
-    elif aula_select == 'Equilíbrio químico':
-        st.header('Equilíbrio químico')
+        #st.markdown(get_binary_file_downloader_html('Aula_06_Termodinamica.pptx', 'Aula'), unsafe_allow_html=True)
+    elif aula_select == 'TÓPICO 6: O QUE É UM SISTEMA EM EQUILÍBRIO QUÍMICO?':
+        st.header('TÓPICO 6: O QUE É UM SISTEMA EM EQUILÍBRIO QUÍMICO?')
         #getaula = pyaula9.Texts()
         #text1 = getaula.text1()
         #st.write(text1, unsafe_allow_html=True)
-        st.markdown(get_binary_file_downloader_html('LISTA_02_QG.pdf', 'Baixar Lista 2'), unsafe_allow_html=True)
-        st.markdown(get_binary_file_downloader_html('Aula_Equilibrio_Quimico.pptx', 'Aula'), unsafe_allow_html=True)
+        #st.markdown(get_binary_file_downloader_html('LISTA_02_QG.pdf', 'Baixar Lista 2'), unsafe_allow_html=True)
+        #st.markdown(get_binary_file_downloader_html('Aula_Equilibrio_Quimico.pptx', 'Aula'), unsafe_allow_html=True)
 
-if nav == 'Físico-Química':
-    st.markdown(get_binary_file_downloader_html('Plano_de_Curso_INQ0330_Verao_2022.pdf', 'Plano de Curso'), unsafe_allow_html=True)
-    st.markdown(get_binary_file_downloader_html('lista_01_FQ.pdf', 'LISTA 01'), unsafe_allow_html=True)
-    aula_select = st.selectbox("Selecione a aula: ", aulas_fq)
+
+if nav == 'Química Geral Experimental':
+    st.markdown(get_binary_file_downloader_html('QGE/PLANO_DE_AULA_QGE_pyaulas.pdf', 'Plano de Curso'), unsafe_allow_html=True)
+    st.markdown(get_binary_file_downloader_html('QGE/Apostila_QGE_2022_Prof_Flavio.pdf', 'Apostila'), unsafe_allow_html=True)
+    #st.markdown(get_binary_file_downloader_html('lista_01_FQ.pdf', 'LISTA 01'), unsafe_allow_html=True)
+    aula_select = st.selectbox("Selecione a aula: ", aulas_qge)
     if aula_select == 'Escolha uma Aula':
         pass
-    elif aula_select == 'Gases':
-        st.header('Bem-vindo à Aula: Gases')
+    elif aula_select == 'Apresentação da disciplina, normas de segurança e vidraria básica':
+        st.header('Bem-vindo à Aula: Apresentação da disciplina, normas de segurança e vidraria básica')
         #getaula = pyaula10.Texts()
         #text1 = getaula.text1()
         #st.write(text1, unsafe_allow_html=True)
-        st.markdown(get_binary_file_downloader_html('Aula_05_gases.pptx', 'Aula'), unsafe_allow_html=True)
-    elif aula_select == 'Termodinâmica':
-        st.header('Bem-vindo à Aula: Termodinâmica')
+        #st.markdown(get_binary_file_downloader_html('Aula_05_gases.pptx', 'Aula'), unsafe_allow_html=True)
+    elif aula_select == 'Equipamentos básicos de laboratório e Técnicas de Trabalho com Material Volumétrico':
+        st.header('Bem-vindo à Aula: Equipamentos básicos de laboratório e Técnicas de Trabalho com Material Volumétrico')
         #getaula = pyaula10.Texts()
         #text1 = getaula.text1()
         #st.write(text1, unsafe_allow_html=True)
-        st.markdown(get_binary_file_downloader_html('Aula_06_Termodinamica.pptx', 'Aula'), unsafe_allow_html=True)
-    elif aula_select == 'Sistemas coloidais e tensão superficial':
-        st.header('Bem-vindo à Aula: Sistemas coloidais e tensão superficial')
+        #st.markdown(get_binary_file_downloader_html('Aula_06_Termodinamica.pptx', 'Aula'), unsafe_allow_html=True)
+    elif aula_select == 'Densidade de Sólido e Líquidos e a Variação da Densidade em Função da Temperatura':
+        st.header('Bem-vindo à Aula: Densidade de Sólido e Líquidos e a Variação da Densidade em Função da Temperatura')
         #getaula = pyaula10.Texts()
         #text1 = getaula.text1()
         #st.write(text1, unsafe_allow_html=True)
         #st.markdown(get_binary_file_downloader_html('Aula_10/Aula_10.pptx', 'Aula'), unsafe_allow_html=True)
-    elif aula_select == 'Cinética química':
-        st.header('Bem-vindo à Aula: Cinética química')
+    elif aula_select == 'Identificação de Metais utilizando o Teste da Chama':
+        st.header('Bem-vindo à Aula: Identificação de Metais utilizando o Teste da Chama')
         #getaula = pyaula10.Texts()
         #text1 = getaula.text1()
         #st.write(text1, unsafe_allow_html=True)
-        st.markdown(get_binary_file_downloader_html('Aula_10.pptx', 'Aula'), unsafe_allow_html=True)
+        #st.markdown(get_binary_file_downloader_html('Aula_10.pptx', 'Aula'), unsafe_allow_html=True)
+    elif aula_select == 'Solubilidade de Sólidos em Líquidos':
+        st.header('Bem-vindo à Aula: Solubilidade de Sólidos em Líquidos')
+        #getaula = pyaula10.Texts()
+        #text1 = getaula.text1()
+        #st.write(text1, unsafe_allow_html=True)
+        #st.markdown(get_binary_file_downloader_html('Aula_10.pptx', 'Aula'), unsafe_allow_html=True)
+    elif aula_select == 'Reações Químicas em Solução Aquosa':
+        st.header('Bem-vindo à Aula: Reações Químicas em Solução Aquosa')
+        #getaula = pyaula10.Texts()
+        #text1 = getaula.text1()
+        #st.write(text1, unsafe_allow_html=True)
+        #st.markdown(get_binary_file_downloader_html('Aula_10.pptx', 'Aula'), unsafe_allow_html=True)
+    elif aula_select == 'Preparo de solução':
+        st.header('Bem-vindo à Aula: Preparo de solução')
+        #getaula = pyaula10.Texts()
+        #text1 = getaula.text1()
+        #st.write(text1, unsafe_allow_html=True)
+        #st.markdown(get_binary_file_downloader_html('Aula_10.pptx', 'Aula'), unsafe_allow_html=True)
+    elif aula_select == 'Padronização de Soluções Aquosas':
+        st.header('Bem-vindo à Aula: Padronização de Soluções Aquosas')
+        #getaula = pyaula10.Texts()
+        #text1 = getaula.text1()
+        #st.write(text1, unsafe_allow_html=True)
+        #st.markdown(get_binary_file_downloader_html('Aula_10/Aula_10.pptx', 'Aula'), unsafe_allow_html=True)
+    elif aula_select == 'Titulação ácido-base: Determinação do teor de ácido acetilsalicílico em comprimido':
+        st.header('Bem-vindo à Aula: Titulação ácido-base: Determinação do teor de ácido acetilsalicílico em comprimido')
+        #getaula = pyaula10.Texts()
+        #text1 = getaula.text1()
+        #st.write(text1, unsafe_allow_html=True)
+        #st.markdown(get_binary_file_downloader_html('Aula_10.pptx', 'Aula'), unsafe_allow_html=True)
+    elif aula_select == 'Determinação da acidez no vinagre comercial':
+        st.header('Bem-vindo à Aula: Determinação da acidez no vinagre comercial')
+        #getaula = pyaula10.Texts()
+        #text1 = getaula.text1()
+        #st.write(text1, unsafe_allow_html=True)
+        #st.markdown(get_binary_file_downloader_html('Aula_10.pptx', 'Aula'), unsafe_allow_html=True)
+    elif aula_select == 'Reações de transferências de elétrons':
+        st.header('Bem-vindo à Aula: Reações de transferências de elétrons')
+        #getaula = pyaula10.Texts()
+        #text1 = getaula.text1()
+        #st.write(text1, unsafe_allow_html=True)
+        #st.markdown(get_binary_file_downloader_html('Aula_10.pptx', 'Aula'), unsafe_allow_html=True)
 
 if nav == 'Contato':
 
