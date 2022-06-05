@@ -40,9 +40,9 @@ class Texts_QGB:
         
         <h1 style='text-align: center; color: black;'>Atividades Complementares</h1>
         <h2 style='text-align: justify; color: black;'>Para enriquecer seu conhecimento no aprendizado do conteúdo ministrado no Tópico 2, algumas sugestões de links para serem acessados são fornecidas abaixo.</h2>
-        <h2 style='text-align: justify; color: black;'>A primeira sugestão é uma simulação online para constrir um átomo <a href="https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_en.html"target="_blank">PhET Build an Atom</a>.</h2>
+        <h2 style='text-align: justify; color: black;'>A primeira sugestão é uma simulação online para construir um átomo <a href="https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_en.html"target="_blank">PhET Build an Atom</a>.</h2>
         <h2 style='text-align: justify; color: black;'><a href="https://phet.colorado.edu/sims/html/rutherford-scattering/latest/rutherford-scattering_en.html"target="_blank">PhET Build an Atom Rutherford Scattering</a></h2>
-        <h2 style='text-align: justify; color: black;'><a href="https://www.youtube.com/watch?v=nDyYtgeD3D0"target="_blank">VIDEO EXPERIMENTO DE J. J. THOMSON</a></h2>
+        <h2 style='text-align: justify; color: black;'><a href="https://www.youtube.com/watch?v=nDyYtgeD3D0"target="_blank">Video sobre O Experimento de J. J. THOMSON</a></h2>
         <h2 style='text-align: justify; color: black;'><a href="https://www.youtube.com/watch?v=AHXD9pgmkPQ"target="_blank">Video sobre O Experimento de Rutherford</a></h2>
         
 
