@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from texts import Texts
-from texts_qgb import QGB
+from texts_qgb import Texts
 import os
 import base64
 from streamlit_option_menu import option_menu
@@ -70,13 +70,13 @@ if nav == 'Química Geral B':
         pass
     elif aula_select == 'TÓPICO 1: ALGUNS CONCEITOS IMPORTANTES PARA QUÍMICA':
         st.header('Bem-vindo à Aula: TÓPICO 1: ALGUNS CONCEITOS IMPORTANTES PARA QUÍMICA')
-        getaula = QGB()
+        getaula = Texts()
         text1 = getaula.text1()
         st.write(text1, unsafe_allow_html=True)
         st.markdown(get_binary_file_downloader_html('Topico_01_Materia.pdf', 'Aula'), unsafe_allow_html=True)
     elif aula_select == 'TÓPICO 2: MODELOS ATÔMICOS':
         st.header('Bem-vindo à Aula: TÓPICO 2: MODELOS ATÔMICOS')
-        getaula = QGB()
+        getaula = Texts()
         text2 = getaula.text2()
         st.write(text2, unsafe_allow_html=True)
         st.markdown(get_binary_file_downloader_html('Topico_02_Estrutura_Atomica.pdf', 'Aula'), unsafe_allow_html=True)

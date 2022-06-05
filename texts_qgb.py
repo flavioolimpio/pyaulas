@@ -1,4 +1,4 @@
-class GQB:
+class Texts:
     def __init__(self):
         pass
 
