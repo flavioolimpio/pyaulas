@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from texts import Texts
+from texts_qgb import QGB
 import os
 import base64
 from streamlit_option_menu import option_menu
@@ -63,21 +64,22 @@ if nav == 'Página Inicial':
 if nav == 'Química Geral B':
     #st.header('Curso de Química Inorgânica')
     st.markdown(get_binary_file_downloader_html('QuimicaGeralB/Plano_de_Aula_QuimicaGeralB_pyAulas.pdf', 'Plano de Curso'), unsafe_allow_html=True)
+    st.markdown(get_binary_file_downloader_html('QuimicaGeralB/lista_de_exercicios_quimica_geral.pdf', 'Plano de Curso'), unsafe_allow_html=True)
     aula_select = st.selectbox("Selecione a aula: ", aulas_qgb)
     if aula_select == 'Escolha uma Aula':
         pass
     elif aula_select == 'TÓPICO 1: ALGUNS CONCEITOS IMPORTANTES PARA QUÍMICA':
         st.header('Bem-vindo à Aula: TÓPICO 1: ALGUNS CONCEITOS IMPORTANTES PARA QUÍMICA')
-        #getaula = pyaula1.Texts()
-        #text1 = getaula.text1()
-        #st.write(text1, unsafe_allow_html=True)
-        #st.markdown(get_binary_file_downloader_html('Aula_01_Materia.pptx', 'Aula'), unsafe_allow_html=True)
+        getaula = QGB()
+        text1 = getaula.text1()
+        st.write(text1, unsafe_allow_html=True)
+        st.markdown(get_binary_file_downloader_html('Topico_01_Materia.pdf', 'Aula'), unsafe_allow_html=True)
     elif aula_select == 'TÓPICO 2: MODELOS ATÔMICOS':
         st.header('Bem-vindo à Aula: TÓPICO 2: MODELOS ATÔMICOS')
-        #getaula = pyaula2.Texts()
-        #text1 = getaula.text1()
-        #st.write(text1, unsafe_allow_html=True)
-        #st.markdown(get_binary_file_downloader_html('Aula_02_Estrutura_Atomica.pdf', 'Aula'), unsafe_allow_html=True)
+        getaula = QGB()
+        text2 = getaula.text2()
+        st.write(text2, unsafe_allow_html=True)
+        st.markdown(get_binary_file_downloader_html('Topico_02_Estrutura_Atomica.pdf', 'Aula'), unsafe_allow_html=True)
     elif aula_select == 'TÓPICO 3: SUBSTÂNCIAS E ALGUMAS DE SUAS PROPRIEDADES':
         st.header('Bem-vindo à Aula: TÓPICO 3: SUBSTÂNCIAS E ALGUMAS DE SUAS PROPRIEDADES')
         #getaula = pyaula3.Texts()

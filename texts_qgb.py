@@ -1,45 +1,51 @@
-class Texts:
+class GQB:
     def __init__(self):
         pass
 
     def text1(self):
         TEXT1 = """
-        <p style='text-align: justify; color: black;'> Devido a pandemia ocasionado pelo novo coronavírus (COVID-19), uma reestruturação do ensino teve que ser adotado no Brasil e no mundo para mitigar a transmissão do vírus. 
-        Vários estudos já têm indicado o prejuízo que a pandemia está provocando e irá provocar nos próximos anos no sistema educacional mundial e brasileiro.
-        Neste sentido, é de suma importância, que os professores, apoiados por pesquisas cientificas, utilizem metodologias alternativas para o melhor aprendizado do aluno em sala de aula. 
-        Foi com este pensamento que as disciplinas oferecidas pelo Prof. Me. Flávio Olimpio foram repensadas.
-        Este site foi desenvolvido com o objetivo de guiar os alunos nas disciplinas de química ministradas na Universidade Federal de Goiás pelo Prof. Me. Flávio Olimpio Sanches Neto. 
-        A ideia é que o site se aperfeiçoe com o tempo e com os feedbacks dos alunos.</p>
+        
+        <h1 style='text-align: center; color: black;'>Verificação de Aprendizagem</h1>
+        <h2 style='text-align: justify; color: black;'>Certifique-se de que compreendeu completamente as seguintes idéias essenciais que foram apresentadas em sala de aula:</h2>
+        <h2 style='text-align: justify; color: black;'>1) Identificar propriedades como físicas ou químicas, intensivas ou extensivas;<br>
+        <br>2) Saber as diferenças entre as transformações químicas e físicas;<br>
+        <br>3) Identificar o que é um elemento, composto e quais são os três estados da matérias e suas transformações;<br>
+        <br>4) Converter unidades/realizar análise dimensional.<br>
+
         """
 
         return TEXT1
-    
+        
     def text2(self):
         TEXT2 = """
-        ## Informação do curso  
-        <p style='text-align: justify; color: black;'>
-        As disciplinas ofericidas no curso de verão e que poderão ser acessados pelos alunos são:<br>        
-        (i)  INQ0158 - Química Geral B;  <br>
-        (ii) INQ0324 - Química Geral Experimental. <br>
-        As demais informações como ementa e detalhes adicionais das disciplinas podem ser acessadas no menu ao lado.
-        </p>
+        
+        <h1 style='text-align: center; color: black;'>Verificação de Aprendizagem</h1>
+        <h2 style='text-align: justify; color: black;'>Certifique-se de que compreendeu completamente as seguintes idéias essenciais que foram apresentadas em sala de aula:</h2>
+        <h2 style='text-align: justify; color: black;'>1) Descrever os experimentos que levaram à formulação do modelo nuclear do átomo;<br>
+        <br>2) Calcular o comprimento de onda ou a frequência da luz, a partir da relação λν=c;<br>
+        <br>3) Calcular o comprimento de onda de uma transição do átomo de hidrogênio utilizando a fórmula de Rydberg;<br>
+        <br>4) Estimar o comprimento de onda de uma partícula;<br>
+        <br>5) Estimar a incerteza na posição ou na velocidade de uma partícula;<br>
+        <br>6) Descrever a origem e as formas das funções de onda de uma partícula em uma caixa;<br>
+        <br>7) Calcular as energias de uma partícula em uma caixa e explicar como elas dependem do comprimento da caixa e da massa da partícula;<br>
+        <br>8) Explicar o que é energia do ponto zero e esclarecer sua origem;<br>
+        <br>9) Estimar a probabilidade relativa de encontrar um elétron em uma determinada distância do núcleo de um átomo;<br>
+        <br>10) Nomear e explicar a relação de cada um dos quatro números quânticos com as propriedades e energias relativas dos orbitais atômicos;<br>
+        <br>11) Descrever as propriedades do spin do elétron;<br>
+        <br>12) Descrever a estrutura de um átomo de hidrogênio nos estados fundamental e excitado;<br>
+        <br>13) Descrever os fatores que afetam as energias de um elétron em um átomo com muitos elétrons;<br>
+        <br>14) Escrever a configuração do átomo de um elemento no estado fundamental;<br>
+        <br>15) Explicar as tendências periódicas dos raios atômicos, das energias de ionização, das afinidades eletrônicas, o efeito do par inerte e relações diagonais;<br>
+        <br>16) Resumir, de modo geral, as propriedades dos elementos em relação a sua posição na Tabela Periódica.<br>
+        
+        <h1 style='text-align: center; color: black;'>Atividades Complementares</h1>
+        <h2 style='text-align: justify; color: black;'>Para enriquecer seu conhecimento no aprendizado do conteúdo ministrado no Tópico 2, algumas sugestões de links para serem acessados são fornecidas abaixo.</h2>
+        <h2 style='text-align: justify; color: black;'>A primeira sugestão é uma simulação online para constrir um átomo <a href="https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_en.html"target="_blank">PhET Build an Atom</a>.</h2>
+        <h2 style='text-align: justify; color: black;'><a href="https://phet.colorado.edu/sims/html/rutherford-scattering/latest/rutherford-scattering_en.html"target="_blank">PhET Build an Atom Rutherford Scattering</a></h2>
+        <h2 style='text-align: justify; color: black;'><a href="https://www.youtube.com/watch?v=nDyYtgeD3D0"target="_blank">VIDEO EXPERIMENTO DE J. J. THOMSON</a></h2>
+        <h2 style='text-align: justify; color: black;'><a href="https://www.youtube.com/watch?v=AHXD9pgmkPQ"target="_blank">Video sobre O Experimento de Rutherford</a></h2>
+        
+
         """
 
         return TEXT2
-    
-    def text3(self):
-        TEXT3 = """
-        ## Informações adicionais: 
-        <p style='text-align: justify; color: black;'>   
-        Flávio Olimpio Sanches Neto<br>
-        Químico Industrial e Mestre em química (Universidade Estadual de Goiás - UEG)<br>
-        Doutorando em Físico-Química (Universidade de Brasília - UnB)<br>
-        Professor Substituto no IQ-UFG (Instituto de Química - Universidade Federal de Goiás)<br>
-        flavio_olimpio@ufg.br<br>
-        <a href="http://lattes.cnpq.br/3756571652061846"target="_blank">Lattes</a><br>
-        <a href="https://www.linkedin.com/in/flavioosneto/"target="_blank">Linkedin</a><br>
-        <a href="https://www.researchgate.net/profile/Flavio-Neto-3"target="_blank">ResearchGate</a><br>
-        </p>
-        """
-
-        return TEXT3
