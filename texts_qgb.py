@@ -1,4 +1,4 @@
-class Texts:
+class Texts_QGB:
     def __init__(self):
         pass
 
