@@ -73,13 +73,13 @@ if nav == 'Química Geral B':
         getaula = Texts_QGB()
         text1 = getaula.text1()
         st.write(text1, unsafe_allow_html=True)
-        st.markdown(get_binary_file_downloader_html('Topico_01_Materia.pdf', 'Aula'), unsafe_allow_html=True)
+        st.markdown(get_binary_file_downloader_html('QuimicaGeralB/Topico_01_Materia.pdf', 'Aula'), unsafe_allow_html=True)
     elif aula_select == 'TÓPICO 2: MODELOS ATÔMICOS':
         st.header('Bem-vindo à Aula: TÓPICO 2: MODELOS ATÔMICOS')
         getaula = Texts_QGB()
         text2 = getaula.text2()
         st.write(text2, unsafe_allow_html=True)
-        st.markdown(get_binary_file_downloader_html('Topico_02_Estrutura_Atomica.pdf', 'Aula'), unsafe_allow_html=True)
+        st.markdown(get_binary_file_downloader_html('QuimicaGeralB/Topico_02_Estrutura_Atomica.pdf', 'Aula'), unsafe_allow_html=True)
     elif aula_select == 'TÓPICO 3: SUBSTÂNCIAS E ALGUMAS DE SUAS PROPRIEDADES':
         st.header('Bem-vindo à Aula: TÓPICO 3: SUBSTÂNCIAS E ALGUMAS DE SUAS PROPRIEDADES')
         #getaula = pyaula3.Texts()
