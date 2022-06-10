@@ -110,7 +110,7 @@ if nav == 'Química Geral B':
 
 if nav == 'Química Geral Experimental':
     st.markdown(get_binary_file_downloader_html('QGE/PLANO_DE_AULA_QGE_pyaulas.pdf', 'Plano de Curso'), unsafe_allow_html=True)
-    st.markdown(get_binary_file_downloader_html('QGE/Apostila_QGE_2022_Prof_Flavio.pdf', 'Apostila'), unsafe_allow_html=True)
+    st.markdown(get_binary_file_downloader_html('QGE/Apostila_de_Quimica_Geral_Pratica.pdf', 'Apostila Nova'), unsafe_allow_html=True)
     #st.markdown(get_binary_file_downloader_html('lista_01_FQ.pdf', 'LISTA 01'), unsafe_allow_html=True)
     aula_select = st.selectbox("Selecione a aula: ", aulas_qge)
     if aula_select == 'Escolha uma Aula':
