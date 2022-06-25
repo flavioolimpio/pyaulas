@@ -44,6 +44,8 @@ class Texts_QGB:
         <h2 style='text-align: justify; color: black;'><a href="https://phet.colorado.edu/sims/html/rutherford-scattering/latest/rutherford-scattering_en.html"target="_blank">PhET Build an Atom Rutherford Scattering</a></h2>
         <h2 style='text-align: justify; color: black;'><a href="https://www.youtube.com/watch?v=nDyYtgeD3D0"target="_blank">Video sobre O Experimento de J. J. THOMSON</a></h2>
         <h2 style='text-align: justify; color: black;'><a href="https://www.youtube.com/watch?v=AHXD9pgmkPQ"target="_blank">Video sobre O Experimento de Rutherford</a></h2>
+        <h2 style='text-align: justify; color: black;'><a href="http://www2.epsd.us/robotics/phet/en/simulations/category/chemistry/quantum.html"target="_blank">Softwares em java sobre simulações de química quântica</a></h2>
+        
         
 
         """
