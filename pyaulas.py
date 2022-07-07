@@ -63,7 +63,7 @@ if nav == 'Página Inicial':
 
 if nav == 'Química Geral B':
     #st.header('Curso de Química Inorgânica')
-    st.markdown(get_binary_file_downloader_html('QuimicaGeralB/Plano_de_Aula_QuimicaGeralB_pyAulas.pdf', 'Plano de Curso'), unsafe_allow_html=True)
+    st.markdown(get_binary_file_downloader_html('QuimicaGeralB/Plano_de_Aula_Engenharia.pdf', 'Plano de Curso Atualizado'), unsafe_allow_html=True)
     st.markdown(get_binary_file_downloader_html('QuimicaGeralB/lista_de_exercicios_quimica_geral.pdf', 'Lista 01 de Química Geral'), unsafe_allow_html=True)
     aula_select = st.selectbox("Selecione a aula: ", aulas_qgb)
     if aula_select == 'Escolha uma Aula':
