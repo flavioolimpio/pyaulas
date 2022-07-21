@@ -82,7 +82,7 @@ if nav == 'Química Geral B':
         st.markdown(get_binary_file_downloader_html('QuimicaGeralB/Topico_02_Estrutura_Atomica.pdf', 'Aula'), unsafe_allow_html=True)
     elif aula_select == 'TÓPICO 3: SUBSTÂNCIAS E ALGUMAS DE SUAS PROPRIEDADES':
         st.header('Bem-vindo à Aula: TÓPICO 3: SUBSTÂNCIAS E ALGUMAS DE SUAS PROPRIEDADES')
-        st.markdown(get_binary_file_downloader_html('QuimicaGeralB/Topico_03_Ligacoes_Quimicas.pdf', 'Aula'), unsafe_allow_html=True)
+        st.markdown(get_binary_file_downloader_html('QuimicaGeralB/Aula_Ligacoes_Quimicas_2022_2.pdf', 'Aula'), unsafe_allow_html=True)
         #getaula = pyaula3.Texts()
         #text1 = getaula.text1()
         #st.write(text1, unsafe_allow_html=True)
