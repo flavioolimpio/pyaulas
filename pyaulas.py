@@ -64,7 +64,7 @@ if nav == 'Página Inicial':
 if nav == 'Química Geral B':
     #st.header('Curso de Química Inorgânica')
     st.markdown(get_binary_file_downloader_html('QuimicaGeralB/Plano_de_Aula_Engenharia.pdf', 'Plano de Curso Atualizado'), unsafe_allow_html=True)
-    st.markdown(get_binary_file_downloader_html('QuimicaGeralB/Lista_02_QGB.pdf', 'Lista 02'), unsafe_allow_html=True)
+    st.markdown(get_binary_file_downloader_html('QuimicaGeralB/Lista_03_QGB.pdf', 'Lista 03 Baixar'), unsafe_allow_html=True)
     aula_select = st.selectbox("Selecione a aula: ", aulas_qgb)
     if aula_select == 'Escolha uma Aula':
         pass
@@ -73,16 +73,16 @@ if nav == 'Química Geral B':
         getaula = Texts_QGB()
         text1 = getaula.text1()
         st.write(text1, unsafe_allow_html=True)
-        st.markdown(get_binary_file_downloader_html('QuimicaGeralB/Topico_01_Materia.pdf', 'Aula'), unsafe_allow_html=True)
+        #st.markdown(get_binary_file_downloader_html('QuimicaGeralB/Topico_01_Materia.pdf', 'Aula'), unsafe_allow_html=True)
     elif aula_select == 'TÓPICO 2: MODELOS ATÔMICOS':
         st.header('Bem-vindo à Aula: TÓPICO 2: MODELOS ATÔMICOS')
         getaula = Texts_QGB()
         text2 = getaula.text2()
         st.write(text2, unsafe_allow_html=True)
-        st.markdown(get_binary_file_downloader_html('QuimicaGeralB/Topico_02_Estrutura_Atomica.pdf', 'Aula'), unsafe_allow_html=True)
+        #st.markdown(get_binary_file_downloader_html('QuimicaGeralB/Topico_02_Estrutura_Atomica.pdf', 'Aula'), unsafe_allow_html=True)
     elif aula_select == 'TÓPICO 3: SUBSTÂNCIAS E ALGUMAS DE SUAS PROPRIEDADES':
         st.header('Bem-vindo à Aula: TÓPICO 3: SUBSTÂNCIAS E ALGUMAS DE SUAS PROPRIEDADES')
-        st.markdown(get_binary_file_downloader_html('QuimicaGeralB/Aula_Ligacoes_Quimicas_2022_2.pdf', 'Aula'), unsafe_allow_html=True)
+        #st.markdown(get_binary_file_downloader_html('QuimicaGeralB/Aula_Ligacoes_Quimicas_2022_2.pdf', 'Aula'), unsafe_allow_html=True)
         #getaula = pyaula3.Texts()
         #text1 = getaula.text1()
         #st.write(text1, unsafe_allow_html=True)
@@ -92,8 +92,6 @@ if nav == 'Química Geral B':
         #getaula = pyaula5.Texts()
         #text1 = getaula.text1()
         #st.write(text1, unsafe_allow_html=True)        
-        #st.markdown(get_binary_file_downloader_html('exercicios_lista_ligacao_quimica.pdf', 'Exercicio Lista'), unsafe_allow_html=True)
-        #st.markdown(get_binary_file_downloader_html('Aula_Ligacoes_quimicas.pptx', 'Aula'), unsafe_allow_html=True)
     elif aula_select == 'TÓPICO 5: ESTEQUIOMETRIA E REAÇÕES QUÍMICAS: POR QUE OCORREM?':
         st.header('Bem-vindo à Aula: TÓPICO 5: ESTEQUIOMETRIA E REAÇÕES QUÍMICAS: POR QUE OCORREM?')
         #getaula = pyaula6.Texts()
@@ -113,6 +111,7 @@ if nav == 'Química Geral Experimental':
     st.markdown(get_binary_file_downloader_html('QGE/PLANO_DE_AULA_QGE_pyaulas.pdf', 'Plano de Curso'), unsafe_allow_html=True)
     st.markdown(get_binary_file_downloader_html('QGE/Apostila_de_Quimica_Geral_Pratica.pdf', 'Apostila Nova'), unsafe_allow_html=True)
     text1='https://colab.research.google.com/drive/1bnf_HOx8id346RRDT-h7tUBcKBMY6yhU?usp=sharing'
+    st.markdown(get_binary_file_downloader_html('QGE/Template_Relatorio_QGE.pdf', 'Template Relatório'), unsafe_allow_html=True)
     st.write(text1, unsafe_allow_html=True)
     #st.markdown(get_binary_file_downloader_html('lista_01_FQ.pdf', 'LISTA 01'), unsafe_allow_html=True)
     aula_select = st.selectbox("Selecione a aula: ", aulas_qge)
