@@ -106,7 +106,7 @@ if nav == 'Química Geral B':
         #text1 = getaula.text1()
         #st.write(text1, unsafe_allow_html=True)
         #st.markdown(get_binary_file_downloader_html('LISTA_02_QG.pdf', 'Baixar Lista 2'), unsafe_allow_html=True)
-        #st.markdown(get_binary_file_downloader_html('Aula_Equilibrio_Quimico.pptx', 'Aula'), unsafe_allow_html=True)
+        st.markdown(get_binary_file_downloader_html('QuimicaGeralB/Aula_Equilibrio_Quimico.pdf', 'Aula Equilíbrio'), unsafe_allow_html=True)
 
 
 if nav == 'Química Geral Experimental':
