@@ -97,9 +97,9 @@ if nav == 'Química Geral B':
         #getaula = pyaula6.Texts()
         #text1 = getaula.text1()
         #st.write(text1, unsafe_allow_html=True)
-        st.markdown(get_binary_file_downloader_html('QuimicaGeralB/Aula_Estequiometria_atualizada.pdf', 'Aula estequiometria'), unsafe_allow_html=True)
-        st.markdown(get_binary_file_downloader_html('QuimicaGeralB/Aula_Reacoes_em_Solucao_Aquosa.pdf', 'Aula Reações Químicas'), unsafe_allow_html=True)
-        st.markdown(get_binary_file_downloader_html('QuimicaGeralB/Aula_Termodinamica.pdf', 'Aula Termoquímica'), unsafe_allow_html=True)
+        #st.markdown(get_binary_file_downloader_html('QuimicaGeralB/Aula_Estequiometria_atualizada.pdf', 'Aula estequiometria'), unsafe_allow_html=True)
+        #st.markdown(get_binary_file_downloader_html('QuimicaGeralB/Aula_Reacoes_em_Solucao_Aquosa.pdf', 'Aula Reações Químicas'), unsafe_allow_html=True)
+        st.markdown(get_binary_file_downloader_html('QuimicaGeralB/Aula_Termodinamica.pdf', 'Aula Termodinamica'), unsafe_allow_html=True)
     elif aula_select == 'TÓPICO 6: O QUE É UM SISTEMA EM EQUILÍBRIO QUÍMICO?':
         st.header('TÓPICO 6: O QUE É UM SISTEMA EM EQUILÍBRIO QUÍMICO?')
         #getaula = pyaula9.Texts()
