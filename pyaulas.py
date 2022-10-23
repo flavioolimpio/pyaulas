@@ -101,7 +101,7 @@ if nav == 'Química Geral B':
 if nav == 'Química Geral Experimental':
     st.markdown(get_binary_file_downloader_html('Apostila_QGE_2022_2.pdf', 'Apostila'), unsafe_allow_html=True)
     st.markdown(get_binary_file_downloader_html('Template_Relatorio_QGE.pdf', 'Template Relatório'), unsafe_allow_html=True)
-    st.write(text1, unsafe_allow_html=True)
+    #st.write(text1, unsafe_allow_html=True)
     aula_select = st.selectbox("Selecione a aula: ", aulas_qge)
     if aula_select == 'Escolha uma Aula':
         pass
@@ -153,7 +153,7 @@ if nav == 'Química Geral Experimental':
 if nav == 'Físico-Química Experimental':
     st.markdown(get_binary_file_downloader_html('Apostila_FQE_2022_2.pdf', 'Apostila'), unsafe_allow_html=True)
     st.markdown(get_binary_file_downloader_html('Template_Relatorio_QGE.pdf', 'Template Relatório'), unsafe_allow_html=True)
-    st.write(text1, unsafe_allow_html=True)
+    #st.write(text1, unsafe_allow_html=True)
     aula_select = st.selectbox("Selecione a aula: ", aulas_fqe)
     if aula_select == 'Escolha uma Aula':
         pass
