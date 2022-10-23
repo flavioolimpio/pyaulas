@@ -1,0 +1,178 @@
+import streamlit as st
+import pandas as pd
+import numpy as np
+from texts import Texts
+from texts_qgb import Texts_QGB
+import os
+import base64
+from streamlit_option_menu import option_menu
+
+st.set_page_config(page_title="PyAulas",layout="wide",initial_sidebar_state="expanded")
+
+
+aulas_qgb = ['Escolha uma Aula',
+'TÓPICO 1: ALGUNS CONCEITOS IMPORTANTES PARA QUÍMICA', 
+'TÓPICO 2: MODELOS ATÔMICOS',
+'TÓPICO 3: SUBSTÂNCIAS E ALGUMAS DE SUAS PROPRIEDADES',
+'TÓPICO 4: INTRODUÇÃO À LIGAÇÃO QUÍMICA A PARTIR DO MODELO ORBITAL',
+'TÓPICO 5: ESTEQUIOMETRIA E REAÇÕES QUÍMICAS: POR QUE OCORREM?',
+'TÓPICO 6: O QUE É UM SISTEMA EM EQUILÍBRIO QUÍMICO?']
+
+aulas_qge = ['Escolha uma Aula',
+'Apresentação da disciplina, normas de segurança e vidraria básica', 
+'Equipamentos básicos de laboratório e Técnicas de Trabalho com Material Volumétrico',
+'Densidade de Sólido e Líquidos e a Variação da Densidade em Função da Temperatura',
+'Identificação de Metais utilizando o Teste da Chama', 
+'Solubilidade de Sólidos em Líquidos', 
+'Reações Químicas em Solução Aquosa'
+'Preparo de solução', 
+'Padronização de Soluções Aquosas',
+'Titulação ácido-base: Determinação do teor de ácido acetilsalicílico em comprimido',
+'Determinação da acidez no vinagre comercial', 
+'Reações de transferências de elétrons']
+
+aulas_fqe = ['Escolha uma Aula',
+'Apresentação da disciplina, normas de segurança e vidraria básica', ]
+
+with st.sidebar:
+    nav = option_menu("Navegação", ["Página Inicial", 'Química Geral B', 'Química Geral Experimental', 'Físico-Química Experimental',  'Contato'], 
+        icons=['house-fill', 'book', 'book-fill', 'book', 'chat-left-text'], menu_icon="cast", default_index=0)
+    nav
+
+
+@st.cache
+def get_binary_file_downloader_html(bin_file, file_label='File'):
+    with open(bin_file, 'rb') as f:
+        data = f.read()
+    bin_str = base64.b64encode(data).decode()
+    href = f"""<h2 style='text-align: justify; color: black;'><a href="data:application/octet-stream;base64,{bin_str}" download="{os.path.basename(bin_file)}">Baixar {file_label}</a></h2>"""
+    return href
+
+# Use Local CSS File
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+if nav == 'Página Inicial':
+    gettext = Texts()
+    text1 = gettext.text1()
+    text2 = gettext.text2()
+    text3 = gettext.text3()
+    st.header('Informações Gerais')
+    st.markdown('{}'.format(text1), unsafe_allow_html=True)
+    st.markdown('{}'.format(text2), unsafe_allow_html=True)
+    st.markdown('{}'.format(text3), unsafe_allow_html=True)
+
+if nav == 'Química Geral B':
+    st.markdown(get_binary_file_downloader_html('Plano_de_Aula_Quim_Geral_B_Eng_Civil', 'Plano de Curso'), unsafe_allow_html=True)
+    aula_select = st.selectbox("Selecione a aula: ", aulas_qgb)
+    if aula_select == 'Escolha uma Aula':
+        pass
+    elif aula_select == 'TÓPICO 1: ALGUNS CONCEITOS IMPORTANTES PARA QUÍMICA':
+        st.header('Bem-vindo à Aula: TÓPICO 1: ALGUNS CONCEITOS IMPORTANTES PARA QUÍMICA')
+        getaula = Texts_QGB()
+        text1 = getaula.text1()
+        st.write(text1, unsafe_allow_html=True)
+    elif aula_select == 'TÓPICO 2: MODELOS ATÔMICOS':
+        st.header('Bem-vindo à Aula: TÓPICO 2: MODELOS ATÔMICOS')
+        getaula = Texts_QGB()
+        text2 = getaula.text2()
+        st.write(text2, unsafe_allow_html=True)
+    elif aula_select == 'TÓPICO 3: SUBSTÂNCIAS E ALGUMAS DE SUAS PROPRIEDADES':
+        st.header('Bem-vindo à Aula: TÓPICO 3: SUBSTÂNCIAS E ALGUMAS DE SUAS PROPRIEDADES')
+        #getaula = pyaula3.Texts()
+        #text1 = getaula.text1()
+    elif aula_select == 'TÓPICO 4: INTRODUÇÃO À LIGAÇÃO QUÍMICA A PARTIR DO MODELO ORBITAL':
+        st.header('Bem-vindo à Aula: TÓPICO 4: INTRODUÇÃO À LIGAÇÃO QUÍMICA A PARTIR DO MODELO ORBITAL')
+        #getaula = pyaula5.Texts()
+        #text1 = getaula.text1()
+        #st.write(text1, unsafe_allow_html=True)        
+    elif aula_select == 'TÓPICO 5: ESTEQUIOMETRIA E REAÇÕES QUÍMICAS: POR QUE OCORREM?':
+        st.header('Bem-vindo à Aula: TÓPICO 5: ESTEQUIOMETRIA E REAÇÕES QUÍMICAS: POR QUE OCORREM?')
+        #getaula = pyaula6.Texts()
+        #text1 = getaula.text1()
+        #st.write(text1, unsafe_allow_html=True)
+    elif aula_select == 'TÓPICO 6: O QUE É UM SISTEMA EM EQUILÍBRIO QUÍMICO?':
+        st.header('TÓPICO 6: O QUE É UM SISTEMA EM EQUILÍBRIO QUÍMICO?')
+        #getaula = pyaula9.Texts()
+        #text1 = getaula.text1()
+
+
+if nav == 'Química Geral Experimental':
+    st.markdown(get_binary_file_downloader_html('Apostila_QGE_2022_2.pdf', 'Apostila'), unsafe_allow_html=True)
+    st.markdown(get_binary_file_downloader_html('Template_Relatorio_QGE.pdf', 'Template Relatório'), unsafe_allow_html=True)
+    st.write(text1, unsafe_allow_html=True)
+    aula_select = st.selectbox("Selecione a aula: ", aulas_qge)
+    if aula_select == 'Escolha uma Aula':
+        pass
+    elif aula_select == 'Apresentação da disciplina, normas de segurança e vidraria básica':
+        st.header('Bem-vindo à Aula: Apresentação da disciplina, normas de segurança e vidraria básica')
+        #getaula = pyaula10.Texts()
+        #text1 = getaula.text1()
+    elif aula_select == 'Equipamentos básicos de laboratório e Técnicas de Trabalho com Material Volumétrico':
+        st.header('Bem-vindo à Aula: Equipamentos básicos de laboratório e Técnicas de Trabalho com Material Volumétrico')
+        #getaula = pyaula10.Texts()
+        #text1 = getaula.text1()
+    elif aula_select == 'Densidade de Sólido e Líquidos e a Variação da Densidade em Função da Temperatura':
+        st.header('Bem-vindo à Aula: Densidade de Sólido e Líquidos e a Variação da Densidade em Função da Temperatura')
+        #getaula = pyaula10.Texts()
+        #text1 = getaula.text1()
+    elif aula_select == 'Identificação de Metais utilizando o Teste da Chama':
+        st.header('Bem-vindo à Aula: Identificação de Metais utilizando o Teste da Chama')
+        #getaula = pyaula10.Texts()
+        #text1 = getaula.text1()
+    elif aula_select == 'Solubilidade de Sólidos em Líquidos':
+        st.header('Bem-vindo à Aula: Solubilidade de Sólidos em Líquidos')
+        #getaula = pyaula10.Texts()
+        #text1 = getaula.text1()
+    elif aula_select == 'Reações Químicas em Solução Aquosa':
+        st.header('Bem-vindo à Aula: Reações Químicas em Solução Aquosa')
+        #getaula = pyaula10.Texts()
+        #text1 = getaula.text1()
+    elif aula_select == 'Preparo de solução':
+        st.header('Bem-vindo à Aula: Preparo de solução')
+        #getaula = pyaula10.Texts()
+        #text1 = getaula.text1()
+    elif aula_select == 'Padronização de Soluções Aquosas':
+        st.header('Bem-vindo à Aula: Padronização de Soluções Aquosas')
+        #getaula = pyaula10.Texts()
+        #text1 = getaula.text1()
+    elif aula_select == 'Titulação ácido-base: Determinação do teor de ácido acetilsalicílico em comprimido':
+        st.header('Bem-vindo à Aula: Titulação ácido-base: Determinação do teor de ácido acetilsalicílico em comprimido')
+        #getaula = pyaula10.Texts()
+        #text1 = getaula.text1()
+    elif aula_select == 'Determinação da acidez no vinagre comercial':
+        st.header('Bem-vindo à Aula: Determinação da acidez no vinagre comercial')
+        #getaula = pyaula10.Texts()
+        #text1 = getaula.text1()
+    elif aula_select == 'Reações de transferências de elétrons':
+        st.header('Bem-vindo à Aula: Reações de transferências de elétrons')
+        #getaula = pyaula10.Texts()
+        #text1 = getaula.text1()
+
+if nav == 'Físico-Química Experimental':
+    st.markdown(get_binary_file_downloader_html('Apostila_FQE_2022_2.pdf', 'Apostila'), unsafe_allow_html=True)
+    st.markdown(get_binary_file_downloader_html('Template_Relatorio_QGE.pdf', 'Template Relatório'), unsafe_allow_html=True)
+    st.write(text1, unsafe_allow_html=True)
+    aula_select = st.selectbox("Selecione a aula: ", aulas_fqe)
+    if aula_select == 'Escolha uma Aula':
+        pass
+    elif aula_select == 'Apresentação da disciplina, normas de segurança e vidraria básica':
+        st.header('Bem-vindo à Aula: Apresentação da disciplina, normas de segurança e vidraria básica')
+
+if nav == 'Contato':
+
+    #st.header(":mailbox: Entre em contato comigo!!")
+    st.header("Entre em contato comigo!!")
+    contact_form = """
+    <form action="https://formsubmit.co/flavio_olimpio@ufg.br" method="post">
+     <input type="hidden" name="_captcha" value="false">
+     <input type="text" name="name" placeholder="Seu nome" optional>
+     <input type="email" name="email" placeholder="Seu email" optional>
+     <textarea name="message" placeholder="Digite sua mensagem aqui"></textarea>
+     <button type="submit">Enviar</button>
+    </form>
+    """
+
+    st.markdown(contact_form, unsafe_allow_html=True)
+    local_css("style/style.css")
