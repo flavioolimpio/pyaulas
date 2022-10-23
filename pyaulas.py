@@ -64,7 +64,7 @@ if nav == 'Página Inicial':
     st.markdown('{}'.format(text3), unsafe_allow_html=True)
 
 if nav == 'Química Geral B':
-    st.markdown(get_binary_file_downloader_html('Plano_de_Aula_Quim_Geral_B_Eng_Civil', 'Plano de Curso'), unsafe_allow_html=True)
+    st.markdown(get_binary_file_downloader_html('Plano_de_Aula_Quim_Geral_B_Eng_Civil.pdf', 'Plano de Curso'), unsafe_allow_html=True)
     aula_select = st.selectbox("Selecione a aula: ", aulas_qgb)
     if aula_select == 'Escolha uma Aula':
         pass
