@@ -2,15 +2,19 @@ class Texts_QGB:
     def __init__(self):
         pass
 
-    def text1(self):
+    def text3(self):
         TEXT1 = """
         
         <h1 style='text-align: center; color: black;'>Verificação de Aprendizagem</h1>
         <h2 style='text-align: justify; color: black;'>Certifique-se de que compreendeu completamente as seguintes idéias essenciais que foram apresentadas em sala de aula:</h2>
-        <h2 style='text-align: justify; color: black;'>1) Identificar propriedades como físicas ou químicas, intensivas ou extensivas;<br>
-        <br>2) Saber as diferenças entre as transformações químicas e físicas;<br>
-        <br>3) Identificar o que é um elemento, composto e quais são os três estados da matérias e suas transformações;<br>
-        <br>4) Converter unidades/realizar análise dimensional.<br>
+        <h2 style='text-align: justify; color: black;'>1) Converter as grandezas mol, massa atômica e quantidade de partículas; <br>
+        <br>2) Executar cálculos estequiométricos para quaisquer duas espécies envolvidas em uma reação química;<br>
+        <br>3) Identificar uma reação química corretamente e fazer sua leitura;<br>
+        <br>4) Balancear uma equação química utilizando o método de semirreações (íon-elétron).<br>
+        
+        <h1 style='text-align: center; color: black;'>Atividades Complementares</h1>
+        <h2 style='text-align: justify; color: black;'>Para enriquecer seu conhecimento no aprendizado do conteúdo ministrado, algumas sugestões de links para serem acessados são fornecidas abaixo.</h2>
+        <h2 style='text-align: justify; color: black;'>A primeira sugestão é uma simulação online para praticar e treinar sobre o conteúdo ministrado. <br><br> <a href="https://phet.colorado.edu/en/simulations/balancing-chemical-equations"target="_blank">PhET - Balanceamento de Equações Químicas</a>.</h2>
 
         """
 
