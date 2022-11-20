@@ -87,7 +87,7 @@ if nav == 'Química Geral I':
         #text2 = getaula.text2()
         #st.write(text2, unsafe_allow_html=True)
     elif aula_select == 'Estequiometria':
-        st.header('Bem-vindo à Aula: TÓPICO 3: Estequiometria')
+        st.header('Bem-vindo à Aula: Estequiometria')
         getaula = Texts_QGB()
         text3 = getaula.text3()
         st.write(text3, unsafe_allow_html=True)
